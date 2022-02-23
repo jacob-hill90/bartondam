@@ -25,7 +25,7 @@ body{
   top: 0px;
   bottom: 0px;
   left: 0px;
-  right: 0px;
+  right: -5px;
   animation: cover 2000ms steps(4);
   animation-iteration-count: infinite;
 }
