@@ -1,35 +1,42 @@
-*{
-  margin: 0px;
-  border: 0px;
-  padding: 0px;
-}
-
 body{
-  background: black;
-  color: white;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+background: black;
+color: white;
+width: 100vw;
+display: flex;
+justify-content: center;
 }
 
-#dot{
-  position: relative;
+.knight{
+background-image: url(img/knight.png);
+background-size: cover;
+width: 300px;
+height: 300px;
+position: absolute;
+top: 10%;
 }
 
-#dot::after{
-  position: absolute;
-  content: '';
-  background: black;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: -5px;
-  animation: cover 2000ms steps(4);
-  animation-iteration-count: infinite;
+.dot{
+position: relative;
+}
+
+.contain{
+    position: absolute;
+    display: flex;
+    top: 55%;
+}
+
+.dot::after{
+position: absolute;
+content: '';
+background: black;
+top: 0px;
+bottom: 0px;
+left: 0px;
+right: -5px;
+animation: cover 2000ms steps(4);
+animation-iteration-count: infinite;
 }
 
 @keyframes cover{
-  to{left: 100%}
+to{left: 100%}
 }
