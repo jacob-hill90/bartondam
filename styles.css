@@ -1,9 +1,11 @@
 body{
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
 background: black;
 color: white;
-width: 100vw;
-display: flex;
-justify-content: center;
 }
 
 .knight{
@@ -11,18 +13,16 @@ background-image: url(img/knight.png);
 background-size: cover;
 width: 300px;
 height: 300px;
-position: absolute;
-top: 25%;
+margin-top: 150px;
+}
+
+.contain{
+display: flex;
+margin-top: 50px;
 }
 
 .dot{
 position: relative;
-}
-
-.contain{
-    position: absolute;
-    display: flex;
-    top: 55%;
 }
 
 .dot::after{
