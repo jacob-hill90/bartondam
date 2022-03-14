@@ -1,11 +1,29 @@
+*{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
 body{
-    width: 99%;
+    width: 100%;
     height: 100%;
+    position: absolute;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background: black;
+    background-color: black;
     color: white;
+}
+
+form{
+    position: absolute;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+    transition-duration: 5000ms;
+    top:0px;
 }
 
 .knight{
@@ -14,11 +32,11 @@ body{
     background-size: cover;
     width: 300px;
     height: 300px;
-    margin-top: 150px;
+    margin-bottom: 75px;
 }
 
 #eye{
-    position:absolute;
+    position: absolute;
     height: 0.7em;
     width: 1.2em;
     left: 120px;
@@ -35,23 +53,18 @@ body{
     opacity: 100%;
 }
 
-.contain{
-    display: flex;
-    margin-top: 50px;
-}
-
-.dot{
+.text{
     position: relative;
 }
 
-.dot::after{
-    position: absolute;
+.text::after{
+    position:absolute;
     content: '';
-    background: black;
     top: 0px;
     bottom: 0px;
-    left: 0px;
-    right: -5px;
+    right: 0px;
+    left: 88%;
+    background-color: black;
     animation: cover 2000ms steps(4);
     animation-iteration-count: infinite;
 }
@@ -59,14 +72,3 @@ body{
 @keyframes cover{
     to{left: 100%}
 }
-
-form{
-    font-family:Arial, Helvetica, sans-serif;
-    margin-top: 20px;
-    display: none;
-    flex-direction: column;
-}
-input{
-    margin: 5px;
-}
-
