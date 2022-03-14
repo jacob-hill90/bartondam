@@ -26,6 +26,16 @@ form{
     top:0px;
 }
 
+input{
+    border-radius: .5em;
+    height: 20px;
+    margin: 5px;
+}
+
+button{
+    margin: 10px;
+}
+
 .knight{
     position: relative;
     background-image: url(img/knight.png);
@@ -71,4 +81,8 @@ form{
 
 @keyframes cover{
     to{left: 100%}
+}
+
+::placeholder{
+    text-indent: 10px;
 }
