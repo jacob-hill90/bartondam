@@ -27,13 +27,15 @@ form{
 }
 
 input{
-    border-radius: .5em;
+    border-radius: .75em;
     height: 20px;
     margin: 5px;
+    text-indent: 5px;
 }
 
 button{
     margin: 10px;
+    font-size: 20px;
 }
 
 .knight{
@@ -84,5 +86,12 @@ button{
 }
 
 ::placeholder{
-    text-indent: 10px;
+    text-indent: 5px;
+    color: rgba(0,0,0,.5);
+}
+
+button{
+    background: gray;
+    font-family:'Times New Roman', Times, serif;
+    cursor: pointer;
 }
