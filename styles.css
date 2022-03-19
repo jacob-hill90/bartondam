@@ -38,7 +38,18 @@ button{
     font-size: 20px;
 }
 
-.knight{
+#darkMode{
+    position: absolute;
+    top:0px;
+    right:0px;
+    height: 35px;
+    width: 35px;
+    margin: 0px;
+    transform: rotate(90deg);
+    background: repeating-linear-gradient(#525252, #525252 49.9%,#ababab 50.1%, #ababab 100%);;
+}
+
+#knight{
     position: relative;
     background-image: url(img/knight.png);
     background-size: cover;
@@ -61,7 +72,7 @@ button{
     cursor: pointer;
 }
 
-.knight:hover #eye{
+#knight:hover #eye{
     opacity: 100%;
 }
 
