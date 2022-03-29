@@ -10,6 +10,7 @@ document.getElementById('eye').addEventListener("click", function(){
     }
 })
 
+
 document.getElementById('darkMode').addEventListener("click", function(){
     clickStates++
     if(clickStates % 2 == 1){
