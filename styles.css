@@ -76,11 +76,12 @@ button{
     opacity: 100%;
 }
 
-.text{
+#whiteText{
     position: relative;
+    display: block;
 }
 
-.text::after{
+#whiteText::after{
     position:absolute;
     content: '';
     top: 0px;
@@ -88,6 +89,23 @@ button{
     right: 0px;
     left: 88%;
     background-color: black;
+    animation: cover 2000ms steps(4);
+    animation-iteration-count: infinite;
+}
+
+#blackText{
+    position: relative;
+    display: none;
+}
+
+#blackText::after{
+    position:absolute;
+    content: '';
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 88%;
+    background-color: white;
     animation: cover 2000ms steps(4);
     animation-iteration-count: infinite;
 }
@@ -106,3 +124,4 @@ button{
     font-family:'Times New Roman', Times, serif;
     cursor: pointer;
 }
+
